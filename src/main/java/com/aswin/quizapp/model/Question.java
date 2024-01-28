@@ -1,4 +1,4 @@
-package com.aswin.quizapp;
+package com.aswin.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import lombok.Data;
 public class Question {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Integer id;
     private String questionTitle;
     private String option1;
